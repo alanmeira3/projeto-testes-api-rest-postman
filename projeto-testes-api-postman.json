@@ -1,0 +1,207 @@
+{
+	"id": "c5ef70fd-4807-49e2-bb1e-4560f5d554c8",
+	"name": "Projeto Testes API REST - JSONPlaceholder",
+	"timestamp": "2026-01-20T14:32:43.492Z",
+	"collection_id": "51665728-d2553c9c-f725-4d0d-8214-22d9ecdd0dc8",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 10,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2026-01-20T14:32:41.863Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "801e4a6d-1aaa-4ca5-91e0-05f569c92e8b",
+			"name": "Criar POST",
+			"url": "https://jsonplaceholder.typicode.com/posts",
+			"time": 140,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Post criado com sucesso": true
+			},
+			"testPassFailCounts": {
+				"Post criado com sucesso": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				140
+			],
+			"allTests": [
+				{
+					"Post criado com sucesso": true
+				}
+			]
+		},
+		{
+			"id": "1d11ddf8-9bf9-4184-92aa-844afd1b9c72",
+			"name": "Buscar post especifico",
+			"url": "https://jsonplaceholder.typicode.com/posts/1",
+			"time": 38,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status 200 OK": true,
+				"Post retornado com ID válido": true
+			},
+			"testPassFailCounts": {
+				"Status 200 OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Post retornado com ID válido": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				38
+			],
+			"allTests": [
+				{
+					"Status 200 OK": true,
+					"Post retornado com ID válido": true
+				}
+			]
+		},
+		{
+			"id": "70d5b10e-e1db-44ae-b734-a1b91c7a6ca2",
+			"name": "Atualizar post",
+			"url": "https://jsonplaceholder.typicode.com/posts/1",
+			"time": 144,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status é 200 OK": true,
+				"Resposta está em JSON": true,
+				"Retornou o ID do recurso atualizado": true
+			},
+			"testPassFailCounts": {
+				"Status é 200 OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Resposta está em JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Retornou o ID do recurso atualizado": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				144
+			],
+			"allTests": [
+				{
+					"Status é 200 OK": true,
+					"Resposta está em JSON": true,
+					"Retornou o ID do recurso atualizado": true
+				}
+			]
+		},
+		{
+			"id": "e0b9131d-e74f-4adf-a716-05218260735d",
+			"name": "DELETE – Remover post",
+			"url": "https://jsonplaceholder.typicode.com/posts/1",
+			"time": 132,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status 200 OK": true
+			},
+			"testPassFailCounts": {
+				"Status 200 OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				132
+			],
+			"allTests": [
+				{
+					"Status 200 OK": true
+				}
+			]
+		},
+		{
+			"id": "7b5c0244-3e85-4fd9-9db6-cdbc705bce60",
+			"name": "Listar posts",
+			"url": "https://jsonplaceholder.typicode.com/posts/1",
+			"time": 20,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status é 200 OK": true,
+				"ID retornado é 1": true,
+				"Tem campos obrigatórios": true
+			},
+			"testPassFailCounts": {
+				"Status é 200 OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"ID retornado é 1": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tem campos obrigatórios": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				20
+			],
+			"allTests": [
+				{
+					"Status é 200 OK": true,
+					"ID retornado é 1": true,
+					"Tem campos obrigatórios": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 474,
+	"collection": {
+		"requests": [
+			{
+				"id": "801e4a6d-1aaa-4ca5-91e0-05f569c92e8b",
+				"method": "POST"
+			},
+			{
+				"id": "1d11ddf8-9bf9-4184-92aa-844afd1b9c72",
+				"method": "GET"
+			},
+			{
+				"id": "70d5b10e-e1db-44ae-b734-a1b91c7a6ca2",
+				"method": "PUT"
+			},
+			{
+				"id": "e0b9131d-e74f-4adf-a716-05218260735d",
+				"method": "DELETE"
+			},
+			{
+				"id": "7b5c0244-3e85-4fd9-9db6-cdbc705bce60",
+				"method": "GET"
+			}
+		]
+	}
+}
